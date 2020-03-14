@@ -38,6 +38,17 @@ export default function Login() {
                     <GroupInfo>
                         <input type="buttom" value="Entrar"  />
                     </GroupInfo>
+
+                    {
+                      pageTab === 'login' ? 
+                      <GroupInfo>
+                          <strong>USER</strong>: statup@gmail.com <br/>
+                          <strong>PASS</strong>: 123456
+                      </GroupInfo>
+                      :
+                      ''
+                    }
+  
                 </FormInputs>
               </div>
               <div className="areaConteudo02">
