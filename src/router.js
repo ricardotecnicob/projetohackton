@@ -7,8 +7,8 @@ import Dashboard from './pages/Dashboard';
 const Rotas = () => {
     return(
       <Switch>
-        {/* <Route path="/" exact component={Login} /> */}
-        <Route path="/" exact component={Dashboard} />{/* dashboard */}
+        <Route path="/" exact component={Login} />
+        <Route path="/dashboard" exact component={Dashboard} />
       </Switch>
     )
 }
