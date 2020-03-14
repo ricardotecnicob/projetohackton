@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import AnyChart from 'anychart-react';
 import anychart from 'anychart';
 
@@ -49,13 +50,13 @@ export default function Dashboard() {
             </div>
             <div className="areaMenuPerfil">
               <ul>
-                <a href="" ><li>Meus Dados <span>80% Concluido</span></li></a>
-                <a href="" ><li>Minha Negocições  <span>30</span></li></a>
-                <a href="" ><li>Meus Posts  <span>30</span></li></a>
-                <a href="" ><li>Metas  <span>30</span></li></a>
-                <a href="" ><li>Equipes  <span>30</span></li></a>
-                <a href="" ><li>Negociações  <span>30</span></li></a>
-                <a href="" ><li>Sair </li></a>
+                <Link to="" ><li>Meus Dados <span>80% Concluido</span></li></Link>
+                <Link to="" ><li>Minha Negocições  <span>30</span></li></Link>
+                <Link to="" ><li>Meus Posts  <span>30</span></li></Link>
+                <Link to="" ><li>Metas  <span>30</span></li></Link>
+                <Link to="" ><li>Equipes  <span>30</span></li></Link>
+                <Link to="" ><li>Negociações  <span>30</span></li></Link>
+                <Link to="/" ><li>Sair </li></Link>
               </ul>
             </div>
             <div className="areadecrescimento">
@@ -200,6 +201,9 @@ export default function Dashboard() {
                   <strong><FaTrophy /></strong>
                   <label htmlFor="">1250</label> 
                   <small>pts</small>
+            </div>
+            <div className="verpremios">
+                <Link to="/premios" >VER LISTA DE PRÊMIOS</Link>
             </div>
             <div className="ultimaAtualizacao">
                 <label> Última Atualização <br /> foi há 20 dias atrás</label>

@@ -277,6 +277,25 @@ export const NotificationConteudo = styled.div`
 
   }
 
+
+  .verpremios{
+    margin-top: 30px;
+    text-align: center;
+    margin-bottom: 30px;
+
+    a{
+      background: #000;
+      text-decoration: none;
+      padding: 10px;
+      color:white; 
+    }
+
+    a:hover{
+      background: #292929;
+    }
+
+  }
+
 `;
 
 

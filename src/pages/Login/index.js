@@ -10,6 +10,10 @@ export default function Login() {
     setPageTab(value);
   } 
 
+  const handleDashboard = redirec => {
+      window.location.href = "/dashboard";
+  }
+
   return (
     <Container >
         <ContainerConteudo>
@@ -30,13 +34,13 @@ export default function Login() {
                     }
                    
                     <GroupInfo>
-                        <input type="email" placeholder="E-mail da Statup" />
+                        <input type="email" placeholder="E-mail da Statup" value="statup@gmail.com" />
                     </GroupInfo>
                     <GroupInfo>
-                        <input type="password" placeholder="Senha da Statup" />
+                        <input type="password" placeholder="Senha da Statup" value="123456" />
                     </GroupInfo>
                     <GroupInfo>
-                        <input type="buttom" value="Entrar"  />
+                        <input type="buttom" value="Entrar" onClick={() => handleDashboard('/dashboard')} />
                     </GroupInfo>
 
                     {
