@@ -5,7 +5,8 @@ import anychart from 'anychart';
 
 import { FaTrophy } from "react-icons/fa";
 
-import { Container,Header,ContainerRede,AreaProvider,ConteudoBody,NotificationConteudo,Footer } from './styles';
+import { Header,ContainerRede,AreaProvider,NotificationConteudo,Footer } from '../../assets/js/global';
+import { Container,ConteudoBody } from './styles';
 
 export default function Dashboard() {
 
@@ -31,6 +32,11 @@ export default function Dashboard() {
   chart.scroller().area(msftDataTable.mapAs({'value': 4}));
   chart.selectRange('2005-01-03', '2005-11-20');
 
+
+  const handleCrescimento = () => {
+    window.location.href = '/vercrescimento';
+  }
+
   return (
     <Container >
       <Header>
@@ -50,12 +56,12 @@ export default function Dashboard() {
             </div>
             <div className="areaMenuPerfil">
               <ul>
-                <Link to="" ><li>Meus Dados <span>80% Concluido</span></li></Link>
-                <Link to="" ><li>Minha Negocições  <span>30</span></li></Link>
-                <Link to="" ><li>Meus Posts  <span>30</span></li></Link>
-                <Link to="" ><li>Metas  <span>30</span></li></Link>
-                <Link to="" ><li>Equipes  <span>30</span></li></Link>
-                <Link to="" ><li>Negociações  <span>30</span></li></Link>
+                <Link to="/perfil" ><li>Meus Dados <span>80% Concluido</span></li></Link>
+                <Link to="/minhasnegociacoes" ><li>Minha Negocições  <span>30</span></li></Link>
+                <Link to="/posts" ><li>Meus Posts  <span>30</span></li></Link>
+                <Link to="/metas" ><li>Metas  <span>30</span></li></Link>
+                <Link to="/team" ><li>Equipes  <span>30</span></li></Link>
+                <Link to="/negociacao" ><li>Negociações  <span>30</span></li></Link>
                 <Link to="/" ><li>Sair </li></Link>
               </ul>
             </div>
@@ -79,7 +85,7 @@ export default function Dashboard() {
                 <div className="areaPontos"><span className="valorPontos" >600</span> pts </div> 
               
                 <div className="areaButtons" >
-                  <button type="button" >VER CRESCIMENTO</button>
+                  <button type="button" onClick={() => handleCrescimento()} >VER CRESCIMENTO</button>
                   <button type="button" >QUERO FAZER NEGÓCIO</button> 
                 </div>
             </div> 
@@ -93,7 +99,7 @@ export default function Dashboard() {
                 <div className="areaPontos"><span className="valorPontos" >600</span> pts </div> 
               
                 <div className="areaButtons" >
-                  <button type="button" >VER CRESCIMENTO</button>
+                  <button type="button" onClick={() => handleCrescimento()} >VER CRESCIMENTO</button>
                   <button type="button" >QUERO FAZER NEGÓCIO</button> 
                 </div>
             </div> 
@@ -107,7 +113,7 @@ export default function Dashboard() {
                 <div className="areaPontos"><span className="valorPontos" >600</span> pts </div> 
               
                 <div className="areaButtons" >
-                  <button type="button" >VER CRESCIMENTO</button>
+                  <button type="button" onClick={() => handleCrescimento()} >VER CRESCIMENTO</button>
                   <button type="button" >QUERO FAZER NEGÓCIO</button> 
                 </div>
             </div> 
@@ -121,7 +127,7 @@ export default function Dashboard() {
                 <div className="areaPontos"><span className="valorPontos" >600</span> pts </div> 
               
                 <div className="areaButtons" >
-                  <button type="button" >VER CRESCIMENTO</button>
+                  <button type="button" onClick={() => handleCrescimento()} >VER CRESCIMENTO</button>
                   <button type="button" >QUERO FAZER NEGÓCIO</button> 
                 </div>
             </div> 
@@ -135,7 +141,7 @@ export default function Dashboard() {
                 <div className="areaPontos"><span className="valorPontos" >600</span> pts </div> 
               
                 <div className="areaButtons" >
-                  <button type="button" >VER CRESCIMENTO</button>
+                  <button type="button" onClick={() => handleCrescimento()} >VER CRESCIMENTO</button>
                   <button type="button" >QUERO FAZER NEGÓCIO</button> 
                 </div>
             </div> 
@@ -149,7 +155,7 @@ export default function Dashboard() {
                 <div className="areaPontos"><span className="valorPontos" >600</span> pts </div> 
               
                 <div className="areaButtons" >
-                  <button type="button" >VER CRESCIMENTO</button>
+                  <button type="button" onClick={() => handleCrescimento()} >VER CRESCIMENTO</button>
                   <button type="button" >QUERO FAZER NEGÓCIO</button> 
                 </div>
             </div> 
@@ -163,7 +169,7 @@ export default function Dashboard() {
                 <div className="areaPontos"><span className="valorPontos" >600</span> pts </div> 
               
                 <div className="areaButtons" >
-                  <button type="button" >VER CRESCIMENTO</button>
+                  <button type="button" onClick={() => handleCrescimento()} >VER CRESCIMENTO</button>
                   <button type="button" >QUERO FAZER NEGÓCIO</button> 
                 </div>
             </div> 
@@ -177,7 +183,7 @@ export default function Dashboard() {
                 <div className="areaPontos"><span className="valorPontos" >600</span> pts </div> 
               
                 <div className="areaButtons" >
-                  <button type="button" >VER CRESCIMENTO</button>
+                  <button type="button" onClick={() => handleCrescimento()} >VER CRESCIMENTO</button>
                   <button type="button" >QUERO FAZER NEGÓCIO</button> 
                 </div>
             </div> 
@@ -191,7 +197,7 @@ export default function Dashboard() {
                 <div className="areaPontos"><span className="valorPontos" >600</span> pts </div> 
               
                 <div className="areaButtons" >
-                  <button type="button" >VER CRESCIMENTO</button>
+                  <button type="button" onClick={() => handleCrescimento()} >VER CRESCIMENTO</button>
                   <button type="button" >QUERO FAZER NEGÓCIO</button> 
                 </div>
             </div> 
