@@ -40,7 +40,7 @@ export const ConteudoBody = styled.div`
          margin-bottom: 20px;
       }
 
-      .card-shadow {
+      .cardShadow {
         box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
         }
 
