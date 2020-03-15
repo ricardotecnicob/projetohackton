@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-import Background from 'https://graphicriver.img.customer.envatousercontent.com/files/1255294/squares%203d2%20preview.jpg?auto=compress%2Cformat&q=80&fit=crop&crop=top&max-h=8000&max-w=590&s=a638ccb78a2c591724e04443eabf8f3e';
+import Background from '../../assets/images/background.jpg';
 
 export const Container = styled.div`
     background-image: url(${Background});
