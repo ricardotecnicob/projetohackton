@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useState } from 'react';
+import axios from 'axios';
 import { Link } from 'react-router-dom';
 import AnyChart from 'anychart-react';
 import anychart from 'anychart';
@@ -36,6 +37,14 @@ export default function Dashboard() {
   const handleCrescimento = () => {
     window.location.href = '/vercrescimento';
   }
+
+  const [list, setList] = useState([]);
+
+  // axios.get(`https://cdn.startupbase.com.br/uploads/hack-pocket/abstartups-data.json`).then(res => {
+  //   setList(res.data);
+  // });
+
+  //console.log(list);
 
   return (
     <Container >
