@@ -12,10 +12,6 @@ export const ConteudoBody = styled.div`
   display: flex;
   flex-wrap: wrap;
 
-img{
-  padding: 5px 1px;
-}
-
   .cardStatups{
     width: 320px;
     height: 400px;
@@ -32,8 +28,9 @@ img{
       .logoStatupCard{
          width: 130px;
          height: 130px;
-         border: 1px black;
+         background: #000;
          border-radius: 100%;
+         display: flex;
          justify-content: center;
          align-items: center;
          color: white;
@@ -43,7 +40,7 @@ img{
          margin-bottom: 20px;
       }
 
-      .cardShadow {
+      <cardShadow {
         box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
         }
 
