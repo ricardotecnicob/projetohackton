@@ -44,7 +44,7 @@ export default function Dashboard() {
         <AreaProvider>
             <div className="areaImagemName">
                 <div className="imgPerfil" >
-                    
+                    <a href="https://placeholder.com"><img src="https://via.placeholder.com/150" /></a>
                 </div>
                 <div className="textPerfil" >
                     <strong>Nome da Startup</strong>
