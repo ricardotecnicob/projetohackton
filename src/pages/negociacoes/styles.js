@@ -9,7 +9,7 @@ export const ConteudoBody=styled.div`
     @media all and(min-width: 1920px){
   }
   background: white;
-  padding: 20px;
+  padding: 20px; 
 
 
 `;
