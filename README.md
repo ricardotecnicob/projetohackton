@@ -4,7 +4,7 @@
 
 # LINK DE ACESSO
 
-https://projetohackton.netlify.com/dashboard 
+https://projetohackton.netlify.com/ 
 
 # Startup Connection - FrontEnd
 
