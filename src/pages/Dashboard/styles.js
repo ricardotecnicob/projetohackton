@@ -7,7 +7,7 @@ export const ConteudoBody = styled.div`
   flex: 3;
   @media all and(min-width: 1920px){
   }
-  background: green;
+  background: white;
   padding: 20px;
   display: flex;
   flex-wrap: wrap;
@@ -26,8 +26,8 @@ export const ConteudoBody = styled.div`
     margin-right: 20px;
 
       .logoStatupCard{
-         width: 130px;
-         height: 130px;
+         width: 140px;
+         height: 140px;
          background: #000;
          border-radius: 100%;
          display: flex;
@@ -40,8 +40,16 @@ export const ConteudoBody = styled.div`
          margin-bottom: 20px;
       }
 
+      .card-shadow {
+        box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+        }
+
+
       .nomeStatupCard{
         font-weight: bold;
+        font-size: 30px;
+        display: inline-block;
+        position: relative;
       }
 
       .bioStatupCard{
@@ -52,8 +60,11 @@ export const ConteudoBody = styled.div`
         margin-bottom: 20px;
         font-size: 1.3em;
         font-weight: bold;
-        color: white;
-        background: #000;
+        text-shadow: 2px 2px 4px #2e74eb;
+        color: black;
+        background: #82acf3;
+        border: none;
+        border-radius: 40px 10px;
         width: 100%;
 
           .valorPontos{
@@ -69,6 +80,8 @@ export const ConteudoBody = styled.div`
           cursor: pointer;
           color: white;
           font-weight: bold;
+          border: none;
+          border-radius: 40px 10px;
         }
 
         button:nth-child(1){
