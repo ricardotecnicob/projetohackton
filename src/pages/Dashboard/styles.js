@@ -26,8 +26,8 @@ export const ConteudoBody = styled.div`
     margin-right: 20px;
 
       .logoStatupCard{
-         width: 140px;
-         height: 140px;
+         width: 130px;
+         height: 130px;
          background: #000;
          border-radius: 100%;
          display: flex;
