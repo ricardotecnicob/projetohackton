@@ -62,7 +62,7 @@ export const ConteudoBody = styled.div`
         font-weight: bold;
         text-shadow: 2px 2px 4px #2e74eb;
         color: black;
-        background: #82acf3;
+        background: #white;
         border: none;
         border-radius: 40px 10px;
         width: 100%;
