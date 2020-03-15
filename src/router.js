@@ -15,6 +15,9 @@ const Rotas = () => {
         <Route path="/vercrescimento"  component={Vercrescimento} />
         {/* <Route path="/premios" exact component={Premios} />  */}
 
+
+        <Route >404</Route>
+
       </Switch>
     )
 }
