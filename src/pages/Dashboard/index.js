@@ -9,6 +9,9 @@ import { FaTrophy } from "react-icons/fa";
 import { Header,ContainerRede,AreaProvider,NotificationConteudo,Footer } from '../../assets/js/global';
 import { Container,ConteudoBody } from './styles';
 
+
+
+
 export default function Dashboard() {
 
   var msftDataTable = anychart.data.table();
@@ -42,14 +45,8 @@ export default function Dashboard() {
     window.location.href = '/negociacoes';
   }
 
-  const [list, setList] = useState([]);
 
-  // axios.get(`https://cdn.startupbase.com.br/uploads/hack-pocket/abstartups-data.json`).then(res => {
-  //   setList(res.data);
-  // });
-
-  //console.log(list);
-
+  
   return (
     <Container >
       <Header>
@@ -88,10 +85,11 @@ export default function Dashboard() {
             </div>
         </AreaProvider>
         <ConteudoBody>
+
             <div className="cardStatups cardShadow" >
                 <div className="logoStatupCard">
                   <a href="https://placeholder.com"><img src="https://via.placeholder.com/150" /></a>
-            </div>
+                </div>
             <br />
 
                 <div className="nomeStatupCard" >Nome Startup</div>
@@ -105,6 +103,7 @@ export default function Dashboard() {
                   <button type="button" onClick={() => handleNegociacoes()} >QUERO FAZER NEGÓCIO</button> 
                 </div>
             </div> 
+
             <div className="cardStatups" >
                 <div className="logoStatupCard"><a href="https://placeholder.com"><img src="https://via.placeholder.com/150" /></a></div><br />
 

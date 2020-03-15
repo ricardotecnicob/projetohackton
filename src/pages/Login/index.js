@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 
 import { Container, ContainerConteudo, GroupInfo, FormInputs, ContainerConteudoInterno } from './styles';
 
+import logo from './logo.png';
+
 export default function Login() {
 
   const [pageTab,setPageTab] = useState('login');
@@ -56,7 +58,7 @@ export default function Login() {
                 </FormInputs>
               </div>
               <div className="areaConteudo02">
-                  <img src="./logo.png"></img>
+                  <img src={logo} border="0" alt="LOGO" />
               </div>
             </ContainerConteudoInterno>
         </ContainerConteudo>
