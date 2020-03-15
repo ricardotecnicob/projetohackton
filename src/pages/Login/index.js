@@ -27,17 +27,17 @@ export default function Login() {
                     {
                       pageTab === 'cadastro' ? 
                       <GroupInfo>
-                        <input type="text" placeholder="Nome Statup" />
+                        <input type="text" placeholder="Nome Startup" />
                       </GroupInfo>
                       :
                       ''
                     }
                    
                     <GroupInfo>
-                        <input type="email" placeholder="E-mail da Statup" value="statup@gmail.com" />
+                        <input type="email" placeholder="E-mail da Startup" value="statup@gmail.com" />
                     </GroupInfo>
                     <GroupInfo>
-                        <input type="password" placeholder="Senha da Statup" value="123456" />
+                        <input type="password" placeholder="Senha da Startup" value="123456" />
                     </GroupInfo>
                     <GroupInfo>
                         <input type="buttom" value="Entrar" onClick={() => handleDashboard('/dashboard')} />
@@ -56,8 +56,7 @@ export default function Login() {
                 </FormInputs>
               </div>
               <div className="areaConteudo02">
-                  <strong>LOGO</strong><br />
-                  <small>Venha fazer parte desse crescimento de Statups</small>
+                  <img src="logo.png"></img>
               </div>
             </ContainerConteudoInterno>
         </ContainerConteudo>
