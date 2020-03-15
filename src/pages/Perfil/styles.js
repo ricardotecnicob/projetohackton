@@ -15,7 +15,7 @@ export const ConteudoBody = styled.div`
 
 
     .linha{
-      border-bottom: 2px solid #fff;
+      border-bottom: 2px solid #8c8c8c;
       padding-bottom: 15px;
     }
 
