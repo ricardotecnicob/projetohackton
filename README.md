@@ -2,6 +2,10 @@
 <a href="#" alt="Startup Connection">
   </a></p>
 
+# LINK DE ACESSO
+
+https://projetohackton.netlify.com/dashboard 
+
 # Startup Connection - FrontEnd
 
 Rede Social que Ajuda Statups terem relacinamento entre si e investidores não terem que procurar mais em varios lugares para investir
