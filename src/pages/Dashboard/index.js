@@ -75,9 +75,9 @@ export default function Dashboard() {
             </div>
         </AreaProvider>
         <ConteudoBody>
-            <div className="cardStatups" >
+            <div className="cardStatups cardShadow" >
                 <div className="logoStatupCard">
-                  <a href="https://placeholder.com"><img src"https://via.placeholder.com/150" /></a>
+                  <a href="https://placeholder.com"><img src="https://via.placeholder.com/150" /></a>
             </div>
             <br />
 
@@ -93,7 +93,7 @@ export default function Dashboard() {
                 </div>
             </div> 
             <div className="cardStatups" >
-                <div className="logoStatupCard">Logo <br/> Startup</div><br />
+                <div className="logoStatupCard"><a href="https://placeholder.com"><img src="https://via.placeholder.com/150" /></a></div><br />
 
                 <div className="nomeStatupCard" >Nome Startup</div>
                 <div className="bioStatupCard" >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum officia placeat voluptates, quos quis nostrum incidunt odio eius perspiciatis temporibus reprehenderit excepturi autem, dicta nobis iusto harum quas iure dignissimos.</div>
@@ -107,7 +107,7 @@ export default function Dashboard() {
                 </div>
             </div> 
             <div className="cardStatups" >
-                <div className="logoStatupCard">Logo <br/> Startup</div><br />
+                <div className="logoStatupCard"><a href="https://placeholder.com"><img src="https://via.placeholder.com/150" /></a></div><br />
 
                 <div className="nomeStatupCard" >Nome Startup</div>
                 <div className="bioStatupCard" >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum officia placeat voluptates, quos quis nostrum incidunt odio eius perspiciatis temporibus reprehenderit excepturi autem, dicta nobis iusto harum quas iure dignissimos.</div>
@@ -121,7 +121,7 @@ export default function Dashboard() {
                 </div>
             </div> 
             <div className="cardStatups" >
-                <div className="logoStatupCard">Logo <br/> Startup</div><br />
+                <div className="logoStatupCard"><a href="https://placeholder.com"><img src="https://via.placeholder.com/150" /></a></div><br />
 
                 <div className="nomeStatupCard" >Nome Startup</div>
                 <div className="bioStatupCard" >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum officia placeat voluptates, quos quis nostrum incidunt odio eius perspiciatis temporibus reprehenderit excepturi autem, dicta nobis iusto harum quas iure dignissimos.</div>
@@ -135,7 +135,7 @@ export default function Dashboard() {
                 </div>
             </div> 
             <div className="cardStatups" >
-                <div className="logoStatupCard">Logo <br/> Startup</div><br />
+                <div className="logoStatupCard"><a href="https://placeholder.com"><img src="https://via.placeholder.com/150" /></a></div><br />
 
                 <div className="nomeStatupCard" >Nome Startup</div>
                 <div className="bioStatupCard" >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum officia placeat voluptates, quos quis nostrum incidunt odio eius perspiciatis temporibus reprehenderit excepturi autem, dicta nobis iusto harum quas iure dignissimos.</div>
@@ -149,7 +149,7 @@ export default function Dashboard() {
                 </div>
             </div> 
             <div className="cardStatups" >
-                <div className="logoStatupCard">Logo <br/> Statup</div><br />
+                <div className="logoStatupCard"><a href="https://placeholder.com"><img src="https://via.placeholder.com/150" /></a></div><br />
 
                 <div className="nomeStatupCard" >Nome Startup</div>
                 <div className="bioStatupCard" >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum officia placeat voluptates, quos quis nostrum incidunt odio eius perspiciatis temporibus reprehenderit excepturi autem, dicta nobis iusto harum quas iure dignissimos.</div>
@@ -163,21 +163,7 @@ export default function Dashboard() {
                 </div>
             </div> 
             <div className="cardStatups" >
-                <div className="logoStatupCard">Logo <br/> Startup</div><br />
-
-                <div className="nomeStatupCard" >Nome Statup</div>
-                <div className="bioStatupCard" >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum officia placeat voluptates, quos quis nostrum incidunt odio eius perspiciatis temporibus reprehenderit excepturi autem, dicta nobis iusto harum quas iure dignissimos.</div>
-           
-                
-                <div className="areaPontos"><span className="valorPontos" >600</span> pts </div> 
-              
-                <div className="areaButtons" >
-                  <button type="button" onClick={() => handleCrescimento()} >VER CRESCIMENTO</button>
-                  <button type="button" >QUERO FAZER NEGÓCIO</button> 
-                </div>
-            </div> 
-            <div className="cardStatups" >
-                <div className="logoStatupCard">Logo <br/> Startup</div><br />
+                <div className="logoStatupCard"><a href="https://placeholder.com"><img src="https://via.placeholder.com/150" /></a></div><br />
 
                 <div className="nomeStatupCard" >Nome Startup</div>
                 <div className="bioStatupCard" >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum officia placeat voluptates, quos quis nostrum incidunt odio eius perspiciatis temporibus reprehenderit excepturi autem, dicta nobis iusto harum quas iure dignissimos.</div>
@@ -191,7 +177,21 @@ export default function Dashboard() {
                 </div>
             </div> 
             <div className="cardStatups" >
-                <div className="logoStatupCard">Logo <br/> Startup</div><br />
+                <div className="logoStatupCard"><a href="https://placeholder.com"><img src="https://via.placeholder.com/150" /></a></div><br />
+
+                <div className="nomeStatupCard" >Nome Startup</div>
+                <div className="bioStatupCard" >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum officia placeat voluptates, quos quis nostrum incidunt odio eius perspiciatis temporibus reprehenderit excepturi autem, dicta nobis iusto harum quas iure dignissimos.</div>
+           
+                
+                <div className="areaPontos"><span className="valorPontos" >600</span> pts </div> 
+              
+                <div className="areaButtons" >
+                  <button type="button" onClick={() => handleCrescimento()} >VER CRESCIMENTO</button>
+                  <button type="button" >QUERO FAZER NEGÓCIO</button> 
+                </div>
+            </div> 
+            <div className="cardStatups" >
+                <div className="logoStatupCard"><a href="https://placeholder.com"><img src="https://via.placeholder.com/150" /></a></div><br />
 
                 <div className="nomeStatupCard" >Nome Startup</div>
                 <div className="bioStatupCard" >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum officia placeat voluptates, quos quis nostrum incidunt odio eius perspiciatis temporibus reprehenderit excepturi autem, dicta nobis iusto harum quas iure dignissimos.</div>
