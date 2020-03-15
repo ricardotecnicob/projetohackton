@@ -12,6 +12,9 @@ export const ConteudoBody = styled.div`
   display: flex;
   flex-wrap: wrap;
 
+img{
+  padding: 5px 1px;
+}
   .cardStatups{
     width: 320px;
     height: 400px;
