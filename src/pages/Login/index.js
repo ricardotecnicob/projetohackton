@@ -58,7 +58,11 @@ export default function Login() {
                 </FormInputs>
               </div>
               <div className="areaConteudo02">
+<<<<<<< HEAD
                   <img src={logo} border="0" alt="LOGO" />
+=======
+                  <img src="logo.png"></img>
+>>>>>>> b602714b3880b7dbeed0fda20a96715adf762ff5
               </div>
             </ContainerConteudoInterno>
         </ContainerConteudo>
