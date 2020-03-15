@@ -177,7 +177,9 @@ export const NotificationConteudo = styled.div`
     width: 90%;
     margin:auto;
     padding: 10px;
-    background: #000;
+    background: #f59f59;
+    border: none;
+    border-radius: 10px 10px 10px 10px;
     margin-top: 20px;
     display:flex;
     justify-content:center;
