@@ -3,9 +3,9 @@ import styled from 'styled-components';
 
 export const Header = styled.div`
     padding: 30px;
-    background: #000;
+    background: #bee1ef;
     text-align: center;
-    color: white;
+    color: black;
     font-size: 20px;
 
       span{
@@ -19,6 +19,8 @@ export const Header = styled.div`
 
       .btnVoltar{
         background: red;
+        border: none;
+        border-radius: 40px 10px;
         padding: 10px;
         color: white;
         font-weight: bold;
@@ -26,7 +28,7 @@ export const Header = styled.div`
       }
 
       .btnVoltar:hover{
-        background: #B22222;
+        background: #f10300;
       }
 
 `;
@@ -43,7 +45,7 @@ export const AreaProvider = styled.div`
   }
 
   
-  background: red;
+  background: white;
   
   .areaMenuPerfil{
       width: 90%;
@@ -58,11 +60,15 @@ export const AreaProvider = styled.div`
 
           li{
             padding: 5px; 
-            background: #000;
+            background: #1f75fe;
+            border: none;
+            border-radius: 10px 10px 10px 10px;
+            border: none;
+            border radius: 40px 10px;
             margin-bottom: 5px; 
             
               span{
-                background: red;
+                background: green;
                 margin-left: 10px;
               }
 
@@ -115,7 +121,7 @@ export const NotificationConteudo = styled.div`
   @media only screen and (min-width: 1920px){
   }
 
-  background: yellow;
+  background: white;
   padding-top: 20px;
 
 
@@ -147,7 +153,9 @@ export const NotificationConteudo = styled.div`
   } 
 
   .ultimaAtualizacao{
-    background: #00008B;
+    background: #ef2c2a;
+    border: none;
+    border-radius: 10px 10px 10px 10px;
     width: 100%;
     min-height: 50px;
     text-align: center;
@@ -169,7 +177,9 @@ export const NotificationConteudo = styled.div`
     width: 90%;
     margin:auto;
     padding: 10px;
-    background: #000;
+    background: #f59f59;
+    border: none;
+    border-radius: 10px 10px 10px 10px;
     margin-top: 20px;
     display:flex;
     justify-content:center;

@@ -5,6 +5,7 @@ import Login from './pages/Login';
 import Dashboard from './pages/Dashboard';
 import Perfil from './pages/Perfil';
 import Vercrescimento from './pages/Vercrescimento';
+import Negociacoes from './pages/Negociacoes';
 
 const Rotas = () => {
     return(
@@ -13,6 +14,7 @@ const Rotas = () => {
         <Route path="/dashboard"  component={Dashboard} /> 
         <Route path="/perfil"  component={Perfil} /> 
         <Route path="/vercrescimento"  component={Vercrescimento} />
+        <Route path="/negociacoes"  component={Negociacoes} />
         {/* <Route path="/premios" exact component={Premios} />  */}
 
 

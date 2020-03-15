@@ -38,6 +38,10 @@ export default function Dashboard() {
     window.location.href = '/vercrescimento';
   }
 
+  const handleNegociacoes = () => {
+    window.location.href = '/negociacoes';
+  }
+
   const [list, setList] = useState([]);
 
   // axios.get(`https://cdn.startupbase.com.br/uploads/hack-pocket/abstartups-data.json`).then(res => {
@@ -49,17 +53,17 @@ export default function Dashboard() {
   return (
     <Container >
       <Header>
-          As atulizações Feitas na Plataforma de <span>PERFIL</span>, <span>METAS</span>, <span>EQUIPE</span>, <span>POSTS</span>, <span>NEGOCIAÇÕES</span>, gerar <label>PONTOS</label> que poderam ser trocados em <label>PRÊMIOS</label> <br/>
+          As atulizações Feitas na Plataforma de <span>PERFIL</span>, <span>METAS</span>, <span>EQUIPE</span>, <span>POSTS</span>, <span>NEGOCIAÇÕES</span>, gerar <label>PONTOS</label> que poderão ser trocados em <label>PRÊMIOS</label> <br/>
           PERFIL ATUALIZADO A CADA 30 DIAS GANHA PONTUAÇÃO <label>NOTA 1000</label>;
       </Header>
       <ContainerRede>
         <AreaProvider>
             <div className="areaImagemName">
                 <div className="imgPerfil" >
-                    
+                    <a href="https://placeholder.com"><img src="https://via.placeholder.com/150" /></a>
                 </div>
                 <div className="textPerfil" >
-                    <strong>Nome da Statup</strong>
+                    <strong>Nome da Startup</strong>
                 </div>
                 <p>BIO: <br /> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum officia placeat voluptates, quos quis nostrum incidunt odio eius perspiciatis temporibus reprehenderit excepturi autem, dicta nobis iusto harum quas iure dignissimos.</p>
             </div>
@@ -70,7 +74,7 @@ export default function Dashboard() {
                 <Link to="/posts" ><li>Meus Posts  <span>30</span></li></Link>
                 <Link to="/metas" ><li>Metas  <span>30</span></li></Link>
                 <Link to="/team" ><li>Equipes  <span>30</span></li></Link>
-                <Link to="/negociacao" ><li>Negociações  <span>30</span></li></Link>
+                <Link to="/negociacoes" ><li>Negociações  <span>30</span></li></Link>
                 <Link to="/" ><li>Sair </li></Link>
               </ul>
             </div>
@@ -84,10 +88,13 @@ export default function Dashboard() {
             </div>
         </AreaProvider>
         <ConteudoBody>
-            <div className="cardStatups" >
-                <div className="logoStatupCard">Logo <br/> Statup</div><br />
+            <div className="cardStatups cardShadow" >
+                <div className="logoStatupCard">
+                  <a href="https://placeholder.com"><img src="https://via.placeholder.com/150" /></a>
+            </div>
+            <br />
 
-                <div className="nomeStatupCard" >Nome Statup</div>
+                <div className="nomeStatupCard" >Nome Startup</div>
                 <div className="bioStatupCard" >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum officia placeat voluptates, quos quis nostrum incidunt odio eius perspiciatis temporibus reprehenderit excepturi autem, dicta nobis iusto harum quas iure dignissimos.</div>
            
                 
@@ -95,13 +102,13 @@ export default function Dashboard() {
               
                 <div className="areaButtons" >
                   <button type="button" onClick={() => handleCrescimento()} >VER CRESCIMENTO</button>
-                  <button type="button" >QUERO FAZER NEGÓCIO</button> 
+                  <button type="button" onClick={() => handleNegociacoes()} >QUERO FAZER NEGÓCIO</button> 
                 </div>
             </div> 
             <div className="cardStatups" >
-                <div className="logoStatupCard">Logo <br/> Statup</div><br />
+                <div className="logoStatupCard"><a href="https://placeholder.com"><img src="https://via.placeholder.com/150" /></a></div><br />
 
-                <div className="nomeStatupCard" >Nome Statup</div>
+                <div className="nomeStatupCard" >Nome Startup</div>
                 <div className="bioStatupCard" >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum officia placeat voluptates, quos quis nostrum incidunt odio eius perspiciatis temporibus reprehenderit excepturi autem, dicta nobis iusto harum quas iure dignissimos.</div>
            
                 
@@ -109,13 +116,13 @@ export default function Dashboard() {
               
                 <div className="areaButtons" >
                   <button type="button" onClick={() => handleCrescimento()} >VER CRESCIMENTO</button>
-                  <button type="button" >QUERO FAZER NEGÓCIO</button> 
+                  <button type="button" onClick={() => handleNegociacoes()} >QUERO FAZER NEGÓCIO</button> 
                 </div>
             </div> 
             <div className="cardStatups" >
-                <div className="logoStatupCard">Logo <br/> Statup</div><br />
+                <div className="logoStatupCard"><a href="https://placeholder.com"><img src="https://via.placeholder.com/150" /></a></div><br />
 
-                <div className="nomeStatupCard" >Nome Statup</div>
+                <div className="nomeStatupCard" >Nome Startup</div>
                 <div className="bioStatupCard" >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum officia placeat voluptates, quos quis nostrum incidunt odio eius perspiciatis temporibus reprehenderit excepturi autem, dicta nobis iusto harum quas iure dignissimos.</div>
            
                 
@@ -123,13 +130,13 @@ export default function Dashboard() {
               
                 <div className="areaButtons" >
                   <button type="button" onClick={() => handleCrescimento()} >VER CRESCIMENTO</button>
-                  <button type="button" >QUERO FAZER NEGÓCIO</button> 
+                  <button type="button" onClick={() => handleNegociacoes()} >QUERO FAZER NEGÓCIO</button> 
                 </div>
             </div> 
             <div className="cardStatups" >
-                <div className="logoStatupCard">Logo <br/> Statup</div><br />
+                <div className="logoStatupCard"><a href="https://placeholder.com"><img src="https://via.placeholder.com/150" /></a></div><br />
 
-                <div className="nomeStatupCard" >Nome Statup</div>
+                <div className="nomeStatupCard" >Nome Startup</div>
                 <div className="bioStatupCard" >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum officia placeat voluptates, quos quis nostrum incidunt odio eius perspiciatis temporibus reprehenderit excepturi autem, dicta nobis iusto harum quas iure dignissimos.</div>
            
                 
@@ -137,13 +144,13 @@ export default function Dashboard() {
               
                 <div className="areaButtons" >
                   <button type="button" onClick={() => handleCrescimento()} >VER CRESCIMENTO</button>
-                  <button type="button" >QUERO FAZER NEGÓCIO</button> 
+                  <button type="button" onClick={() => handleNegociacoes()} >QUERO FAZER NEGÓCIO</button> 
                 </div>
             </div> 
             <div className="cardStatups" >
-                <div className="logoStatupCard">Logo <br/> Statup</div><br />
+                <div className="logoStatupCard"><a href="https://placeholder.com"><img src="https://via.placeholder.com/150" /></a></div><br />
 
-                <div className="nomeStatupCard" >Nome Statup</div>
+                <div className="nomeStatupCard" >Nome Startup</div>
                 <div className="bioStatupCard" >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum officia placeat voluptates, quos quis nostrum incidunt odio eius perspiciatis temporibus reprehenderit excepturi autem, dicta nobis iusto harum quas iure dignissimos.</div>
            
                 
@@ -151,13 +158,13 @@ export default function Dashboard() {
               
                 <div className="areaButtons" >
                   <button type="button" onClick={() => handleCrescimento()} >VER CRESCIMENTO</button>
-                  <button type="button" >QUERO FAZER NEGÓCIO</button> 
+                  <button type="button" onClick={() => handleNegociacoes()} >QUERO FAZER NEGÓCIO</button> 
                 </div>
             </div> 
             <div className="cardStatups" >
-                <div className="logoStatupCard">Logo <br/> Statup</div><br />
+                <div className="logoStatupCard"><a href="https://placeholder.com"><img src="https://via.placeholder.com/150" /></a></div><br />
 
-                <div className="nomeStatupCard" >Nome Statup</div>
+                <div className="nomeStatupCard" >Nome Startup</div>
                 <div className="bioStatupCard" >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum officia placeat voluptates, quos quis nostrum incidunt odio eius perspiciatis temporibus reprehenderit excepturi autem, dicta nobis iusto harum quas iure dignissimos.</div>
            
                 
@@ -165,13 +172,13 @@ export default function Dashboard() {
               
                 <div className="areaButtons" >
                   <button type="button" onClick={() => handleCrescimento()} >VER CRESCIMENTO</button>
-                  <button type="button" >QUERO FAZER NEGÓCIO</button> 
+                  <button type="button" onClick={() => handleNegociacoes()} >QUERO FAZER NEGÓCIO</button> 
                 </div>
             </div> 
             <div className="cardStatups" >
-                <div className="logoStatupCard">Logo <br/> Statup</div><br />
+                <div className="logoStatupCard"><a href="https://placeholder.com"><img src="https://via.placeholder.com/150" /></a></div><br />
 
-                <div className="nomeStatupCard" >Nome Statup</div>
+                <div className="nomeStatupCard" >Nome Startup</div>
                 <div className="bioStatupCard" >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum officia placeat voluptates, quos quis nostrum incidunt odio eius perspiciatis temporibus reprehenderit excepturi autem, dicta nobis iusto harum quas iure dignissimos.</div>
            
                 
@@ -179,13 +186,13 @@ export default function Dashboard() {
               
                 <div className="areaButtons" >
                   <button type="button" onClick={() => handleCrescimento()} >VER CRESCIMENTO</button>
-                  <button type="button" >QUERO FAZER NEGÓCIO</button> 
+                  <button type="button" onClick={() => handleNegociacoes()} >QUERO FAZER NEGÓCIO</button> 
                 </div>
             </div> 
             <div className="cardStatups" >
-                <div className="logoStatupCard">Logo <br/> Statup</div><br />
+                <div className="logoStatupCard"><a href="https://placeholder.com"><img src="https://via.placeholder.com/150" /></a></div><br />
 
-                <div className="nomeStatupCard" >Nome Statup</div>
+                <div className="nomeStatupCard" >Nome Startup</div>
                 <div className="bioStatupCard" >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum officia placeat voluptates, quos quis nostrum incidunt odio eius perspiciatis temporibus reprehenderit excepturi autem, dicta nobis iusto harum quas iure dignissimos.</div>
            
                 
@@ -193,13 +200,13 @@ export default function Dashboard() {
               
                 <div className="areaButtons" >
                   <button type="button" onClick={() => handleCrescimento()} >VER CRESCIMENTO</button>
-                  <button type="button" >QUERO FAZER NEGÓCIO</button> 
+                  <button type="button" onClick={() => handleNegociacoes()} >QUERO FAZER NEGÓCIO</button> 
                 </div>
             </div> 
             <div className="cardStatups" >
-                <div className="logoStatupCard">Logo <br/> Statup</div><br />
+                <div className="logoStatupCard"><a href="https://placeholder.com"><img src="https://via.placeholder.com/150" /></a></div><br />
 
-                <div className="nomeStatupCard" >Nome Statup</div>
+                <div className="nomeStatupCard" >Nome Startup</div>
                 <div className="bioStatupCard" >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum officia placeat voluptates, quos quis nostrum incidunt odio eius perspiciatis temporibus reprehenderit excepturi autem, dicta nobis iusto harum quas iure dignissimos.</div>
            
                 
@@ -207,7 +214,7 @@ export default function Dashboard() {
               
                 <div className="areaButtons" >
                   <button type="button" onClick={() => handleCrescimento()} >VER CRESCIMENTO</button>
-                  <button type="button" >QUERO FAZER NEGÓCIO</button> 
+                  <button type="button" onClick={() => handleNegociacoes()} >QUERO FAZER NEGÓCIO</button> 
                 </div>
             </div> 
         </ConteudoBody>

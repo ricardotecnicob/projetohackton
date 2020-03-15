@@ -36,7 +36,7 @@ export const ContainerConteudoInterno = styled.div`
 
         .opt01{
           background:  ${props => props.activoaba === 'login' ? '#1E90FF' : '#00B2EE' };
-          border: 1px solid ${props => props.activoaba === 'login' ? '#fff' : '#00B2EE' };
+          border: none ${props => props.activoaba === 'login' ? '#fff' : '#00B2EE' };
           border-radius: 5px;
           margin-right: 10px;
           padding: 7px;
@@ -47,12 +47,11 @@ export const ContainerConteudoInterno = styled.div`
 
         .opt01:hover{
           background: #1E90FF;
-          border: 1px solid #1E90FF;
         }
 
         .opt02{
           background: ${props => props.activoaba === 'cadastro' ? '#1E90FF' : '#00B2EE' };;
-          border: 1px solid ${props => props.activoaba === 'cadastro' ? '#fff' : '#00B2EE' };;
+          border: none ${props => props.activoaba === 'cadastro' ? '#fff' : '#00B2EE' };;
           border-radius: 5px;
           margin-right: 10px;
           padding: 7px;
@@ -72,17 +71,11 @@ export const ContainerConteudoInterno = styled.div`
 
   .areaConteudo02{
     flex: 1;
-
-    strong{
-      font-size: 2em;
-      text-shadow: 5px 5px 20px  #000;
-    }
-
-    small{
-      font-size: 15px;
-    }
-
-  }
+     img{
+        height: 60%;
+        width:60%;
+        }
+  } 
 
 `;
 

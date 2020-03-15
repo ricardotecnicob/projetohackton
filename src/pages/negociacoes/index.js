@@ -33,9 +33,9 @@ export default function Dashboard() {
   chart.selectRange('2005-01-03', '2005-11-20');
 
   return (
-    <Container >
+    <Container>
       <Header>
-          As atulizações Feitas na Plataforma de <span>PERFIL</span>, <span>METAS</span>, <span>EQUIPE</span>, <span>POSTS</span>, <span>NEGOCIAÇÕES</span>, gerar <label>PONTOS</label> que poderam ser trocados em <label>PRÊMIOS</label> <br/>
+          As atulizações Feitas na Plataforma de <span>PERFIL</span>, <span>METAS</span>, <span>EQUIPE</span>, <span>POSTS</span>, <span>NEGOCIAÇÕES</span>, gerar <label>PONTOS</label> que poderão ser trocados em <label>PRÊMIOS</label> <br/>
           PERFIL ATUALIZADO A CADA 30 DIAS GANHA <label>1000 PONTOS</label> <br/><br/>
           <Link to="/dashboard" className="btnVoltar">VOLTAR</Link>
       </Header>
@@ -60,22 +60,37 @@ export default function Dashboard() {
                 <Link to="/negociacoes" ><li>Negociações  <span>30</span></li></Link>
               </ul>
             </div>
-            <div className="areadecrescimento">
-                <AnyChart
-                      width="100%"
-                      height={500}
-                      instance={chart}
-                      title="MEU CRESCIMENTO  "
-                  />
-            </div>
+            
         </AreaProvider>
         <ConteudoBody>
-            {/* //conteudo */}
+            <h2>SOBRE</h2>
+            <hr />
+            <p className="divide">Lorem ipsum lacus lacinia est eros donec est condimentum, feugiat dictumst enim pretium nec nullam 
+                ligula lacinia, nisl pellentesque sollicitudin posuere ultrices lectus fermentum. magna enim rutrum 
+                dapibus mattis dui erat dolor, leo himenaeos nam laoreet vel pellentesque ligula torquent, 
+                proin ullamcorper metus hac feugiat volutpat. leo hac netus eleifend nunc amet ligula amet, 
+                erat aenean donec class torquent quis vulputate quisque, dictum ipsum etiam augue torquent himenaeos. 
+                amet erat nisl facilisis vestibulum habitasse bibendum aliquam morbi dapibus, 
+                ad pretium phasellus ut sit arcu sollicitudin vitae, rhoncus lorem hendrerit pharetra molestie 
+                nunc proin integer. </p>
+            <a href="https://placeholder.com"><img src="https://via.placeholder.com/350" className="imgDescription"> </img> </a>
+            <h2>Parceria</h2>
+            <hr />
+            <h4>Contatos:</h4>
+            <h5>contatos cadastrados da empresa serão inseridos aqui</h5>
+            <hr /> 
+            <h2>Negociação:</h2>
+            <p>Lorem ipsum lacus lacinia est eros donec est condimentum, feugiat dictumst enim pretium nec nullam 
+                ligula lacinia, nisl pellentesque sollicitudin posuere ultrices lectus fermentum. magna enim rutrum 
+                dapibus mattis dui erat dolor, leo himenaeos nam laoreet vel pellentesque ligula torquent, 
+                proin ullamcorper metus hac feugiat volutpat. leo hac netus eleifend nunc amet ligula amet, 
+                erat aenean donec class torquent quis vulputate quisque, dictum ipsum etiam augue torquent himenaeos. 
+                amet erat nisl facilisis vestibulum habitasse bibendum aliquam morbi dapibus, 
+                ad pretium phasellus ut sit arcu sollicitudin vitae, rhoncus lorem hendrerit pharetra molestie 
+                nunc proin integer.</p>
+            <a href="#">Entre em contato</a>
         </ConteudoBody>
       </ContainerRede>
-      <Footer>
-
-      </Footer>
     </Container>
   );
 }
