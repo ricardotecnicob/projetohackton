@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 export const Header = styled.div`
     padding: 30px;
-    background: #c03030;
+    background: #bee1ef;
     text-align: center;
     color: black;
     font-size: 20px;
