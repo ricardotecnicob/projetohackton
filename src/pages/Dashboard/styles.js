@@ -43,7 +43,7 @@ img{
          font-size: 20px;
          font-weight: bold;
          text-align: center;
-         margin-bottom: 20px;
+         margin-bottom: 12px;
       }
 
       <cardShadow {
