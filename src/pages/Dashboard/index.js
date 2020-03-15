@@ -76,7 +76,10 @@ export default function Dashboard() {
         </AreaProvider>
         <ConteudoBody>
             <div className="cardStatups" >
-                <div className="logoStatupCard">Logo <br/> Startup</div><br />
+                <div className="logoStatupCard">
+                  <a href="https://placeholder.com"><img src"https://via.placeholder.com/150" /></a>
+            </div>
+            <br />
 
                 <div className="nomeStatupCard" >Nome Startup</div>
                 <div className="bioStatupCard" >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum officia placeat voluptates, quos quis nostrum incidunt odio eius perspiciatis temporibus reprehenderit excepturi autem, dicta nobis iusto harum quas iure dignissimos.</div>
