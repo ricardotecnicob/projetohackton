@@ -40,7 +40,7 @@ export default function Dashboard() {
   return (
     <Container >
       <Header>
-          As atulizações Feitas na Plataforma de <span>PERFIL</span>, <span>METAS</span>, <span>EQUIPE</span>, <span>POSTS</span>, <span>NEGOCIAÇÕES</span>, gerar <label>PONTOS</label> que poderam ser trocados em <label>PRÊMIOS</label> <br/>
+          As atulizações Feitas na Plataforma de <span>PERFIL</span>, <span>METAS</span>, <span>EQUIPE</span>, <span>POSTS</span>, <span>NEGOCIAÇÕES</span>, gerar <label>PONTOS</label> que poderão ser trocados em <label>PRÊMIOS</label> <br/>
           PERFIL ATUALIZADO A CADA 30 DIAS GANHA PONTUAÇÃO <label>NOTA 1000</label>;
       </Header>
       <ContainerRede>
@@ -50,7 +50,7 @@ export default function Dashboard() {
                     
                 </div>
                 <div className="textPerfil" >
-                    <strong>Nome da Statup</strong>
+                    <strong>Nome da Startup</strong>
                 </div>
                 <p>BIO: <br /> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum officia placeat voluptates, quos quis nostrum incidunt odio eius perspiciatis temporibus reprehenderit excepturi autem, dicta nobis iusto harum quas iure dignissimos.</p>
             </div>
@@ -76,9 +76,65 @@ export default function Dashboard() {
         </AreaProvider>
         <ConteudoBody>
             <div className="cardStatups" >
-                <div className="logoStatupCard">Logo <br/> Statup</div><br />
+                <div className="logoStatupCard">Logo <br/> Startup</div><br />
 
-                <div className="nomeStatupCard" >Nome Statup</div>
+                <div className="nomeStatupCard" >Nome Startup</div>
+                <div className="bioStatupCard" >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum officia placeat voluptates, quos quis nostrum incidunt odio eius perspiciatis temporibus reprehenderit excepturi autem, dicta nobis iusto harum quas iure dignissimos.</div>
+           
+                
+                <div className="areaPontos"><span className="valorPontos" >600</span> pts </div> 
+              
+                <div className="areaButtons" >
+                  <button type="button" onClick={() => handleCrescimento()} >VER CRESCIMENTO</button>
+                  <button type="button" >QUERO FAZER NEGÓCIO</button> 
+                </div>
+            </div> 
+            <div className="cardStatups" >
+                <div className="logoStatupCard">Logo <br/> Startup</div><br />
+
+                <div className="nomeStatupCard" >Nome Startup</div>
+                <div className="bioStatupCard" >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum officia placeat voluptates, quos quis nostrum incidunt odio eius perspiciatis temporibus reprehenderit excepturi autem, dicta nobis iusto harum quas iure dignissimos.</div>
+           
+                
+                <div className="areaPontos"><span className="valorPontos" >600</span> pts </div> 
+              
+                <div className="areaButtons" >
+                  <button type="button" onClick={() => handleCrescimento()} >VER CRESCIMENTO</button>
+                  <button type="button" >QUERO FAZER NEGÓCIO</button> 
+                </div>
+            </div> 
+            <div className="cardStatups" >
+                <div className="logoStatupCard">Logo <br/> Startup</div><br />
+
+                <div className="nomeStatupCard" >Nome Startup</div>
+                <div className="bioStatupCard" >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum officia placeat voluptates, quos quis nostrum incidunt odio eius perspiciatis temporibus reprehenderit excepturi autem, dicta nobis iusto harum quas iure dignissimos.</div>
+           
+                
+                <div className="areaPontos"><span className="valorPontos" >600</span> pts </div> 
+              
+                <div className="areaButtons" >
+                  <button type="button" onClick={() => handleCrescimento()} >VER CRESCIMENTO</button>
+                  <button type="button" >QUERO FAZER NEGÓCIO</button> 
+                </div>
+            </div> 
+            <div className="cardStatups" >
+                <div className="logoStatupCard">Logo <br/> Startup</div><br />
+
+                <div className="nomeStatupCard" >Nome Startup</div>
+                <div className="bioStatupCard" >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum officia placeat voluptates, quos quis nostrum incidunt odio eius perspiciatis temporibus reprehenderit excepturi autem, dicta nobis iusto harum quas iure dignissimos.</div>
+           
+                
+                <div className="areaPontos"><span className="valorPontos" >600</span> pts </div> 
+              
+                <div className="areaButtons" >
+                  <button type="button" onClick={() => handleCrescimento()} >VER CRESCIMENTO</button>
+                  <button type="button" >QUERO FAZER NEGÓCIO</button> 
+                </div>
+            </div> 
+            <div className="cardStatups" >
+                <div className="logoStatupCard">Logo <br/> Startup</div><br />
+
+                <div className="nomeStatupCard" >Nome Startup</div>
                 <div className="bioStatupCard" >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum officia placeat voluptates, quos quis nostrum incidunt odio eius perspiciatis temporibus reprehenderit excepturi autem, dicta nobis iusto harum quas iure dignissimos.</div>
            
                 
@@ -92,7 +148,7 @@ export default function Dashboard() {
             <div className="cardStatups" >
                 <div className="logoStatupCard">Logo <br/> Statup</div><br />
 
-                <div className="nomeStatupCard" >Nome Statup</div>
+                <div className="nomeStatupCard" >Nome Startup</div>
                 <div className="bioStatupCard" >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum officia placeat voluptates, quos quis nostrum incidunt odio eius perspiciatis temporibus reprehenderit excepturi autem, dicta nobis iusto harum quas iure dignissimos.</div>
            
                 
@@ -104,7 +160,7 @@ export default function Dashboard() {
                 </div>
             </div> 
             <div className="cardStatups" >
-                <div className="logoStatupCard">Logo <br/> Statup</div><br />
+                <div className="logoStatupCard">Logo <br/> Startup</div><br />
 
                 <div className="nomeStatupCard" >Nome Statup</div>
                 <div className="bioStatupCard" >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum officia placeat voluptates, quos quis nostrum incidunt odio eius perspiciatis temporibus reprehenderit excepturi autem, dicta nobis iusto harum quas iure dignissimos.</div>
@@ -118,9 +174,9 @@ export default function Dashboard() {
                 </div>
             </div> 
             <div className="cardStatups" >
-                <div className="logoStatupCard">Logo <br/> Statup</div><br />
+                <div className="logoStatupCard">Logo <br/> Startup</div><br />
 
-                <div className="nomeStatupCard" >Nome Statup</div>
+                <div className="nomeStatupCard" >Nome Startup</div>
                 <div className="bioStatupCard" >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum officia placeat voluptates, quos quis nostrum incidunt odio eius perspiciatis temporibus reprehenderit excepturi autem, dicta nobis iusto harum quas iure dignissimos.</div>
            
                 
@@ -132,65 +188,9 @@ export default function Dashboard() {
                 </div>
             </div> 
             <div className="cardStatups" >
-                <div className="logoStatupCard">Logo <br/> Statup</div><br />
+                <div className="logoStatupCard">Logo <br/> Startup</div><br />
 
-                <div className="nomeStatupCard" >Nome Statup</div>
-                <div className="bioStatupCard" >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum officia placeat voluptates, quos quis nostrum incidunt odio eius perspiciatis temporibus reprehenderit excepturi autem, dicta nobis iusto harum quas iure dignissimos.</div>
-           
-                
-                <div className="areaPontos"><span className="valorPontos" >600</span> pts </div> 
-              
-                <div className="areaButtons" >
-                  <button type="button" onClick={() => handleCrescimento()} >VER CRESCIMENTO</button>
-                  <button type="button" >QUERO FAZER NEGÓCIO</button> 
-                </div>
-            </div> 
-            <div className="cardStatups" >
-                <div className="logoStatupCard">Logo <br/> Statup</div><br />
-
-                <div className="nomeStatupCard" >Nome Statup</div>
-                <div className="bioStatupCard" >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum officia placeat voluptates, quos quis nostrum incidunt odio eius perspiciatis temporibus reprehenderit excepturi autem, dicta nobis iusto harum quas iure dignissimos.</div>
-           
-                
-                <div className="areaPontos"><span className="valorPontos" >600</span> pts </div> 
-              
-                <div className="areaButtons" >
-                  <button type="button" onClick={() => handleCrescimento()} >VER CRESCIMENTO</button>
-                  <button type="button" >QUERO FAZER NEGÓCIO</button> 
-                </div>
-            </div> 
-            <div className="cardStatups" >
-                <div className="logoStatupCard">Logo <br/> Statup</div><br />
-
-                <div className="nomeStatupCard" >Nome Statup</div>
-                <div className="bioStatupCard" >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum officia placeat voluptates, quos quis nostrum incidunt odio eius perspiciatis temporibus reprehenderit excepturi autem, dicta nobis iusto harum quas iure dignissimos.</div>
-           
-                
-                <div className="areaPontos"><span className="valorPontos" >600</span> pts </div> 
-              
-                <div className="areaButtons" >
-                  <button type="button" onClick={() => handleCrescimento()} >VER CRESCIMENTO</button>
-                  <button type="button" >QUERO FAZER NEGÓCIO</button> 
-                </div>
-            </div> 
-            <div className="cardStatups" >
-                <div className="logoStatupCard">Logo <br/> Statup</div><br />
-
-                <div className="nomeStatupCard" >Nome Statup</div>
-                <div className="bioStatupCard" >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum officia placeat voluptates, quos quis nostrum incidunt odio eius perspiciatis temporibus reprehenderit excepturi autem, dicta nobis iusto harum quas iure dignissimos.</div>
-           
-                
-                <div className="areaPontos"><span className="valorPontos" >600</span> pts </div> 
-              
-                <div className="areaButtons" >
-                  <button type="button" onClick={() => handleCrescimento()} >VER CRESCIMENTO</button>
-                  <button type="button" >QUERO FAZER NEGÓCIO</button> 
-                </div>
-            </div> 
-            <div className="cardStatups" >
-                <div className="logoStatupCard">Logo <br/> Statup</div><br />
-
-                <div className="nomeStatupCard" >Nome Statup</div>
+                <div className="nomeStatupCard" >Nome Startup</div>
                 <div className="bioStatupCard" >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum officia placeat voluptates, quos quis nostrum incidunt odio eius perspiciatis temporibus reprehenderit excepturi autem, dicta nobis iusto harum quas iure dignissimos.</div>
            
                 
