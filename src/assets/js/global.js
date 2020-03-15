@@ -3,9 +3,9 @@ import styled from 'styled-components';
 
 export const Header = styled.div`
     padding: 30px;
-    background: #bee1ef;
+    background: #000;
     text-align: center;
-    color: black;
+    color: white;
     font-size: 20px;
 
       span{
@@ -61,6 +61,8 @@ export const AreaProvider = styled.div`
           li{
             padding: 5px; 
             background: #1f75fe;
+            border: none;
+            border-radius: 10px 10px 10px 10px;
             border: none;
             border radius: 40px 10px;
             margin-bottom: 5px; 
@@ -152,6 +154,8 @@ export const NotificationConteudo = styled.div`
 
   .ultimaAtualizacao{
     background: #ef2c2a;
+    border: none;
+    border-radius: 10px 10px 10px 10px;
     width: 100%;
     min-height: 50px;
     text-align: center;
