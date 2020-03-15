@@ -19,6 +19,8 @@ export const Header = styled.div`
 
       .btnVoltar{
         background: red;
+        border: none;
+        border-radius: 40px 10px;
         padding: 10px;
         color: white;
         font-weight: bold;
@@ -26,7 +28,7 @@ export const Header = styled.div`
       }
 
       .btnVoltar:hover{
-        background: #B22222;
+        background: #f10300;
       }
 
 `;
@@ -43,7 +45,7 @@ export const AreaProvider = styled.div`
   }
 
   
-  background: red;
+  background: #b7c6fa;
   
   .areaMenuPerfil{
       width: 90%;
@@ -58,11 +60,13 @@ export const AreaProvider = styled.div`
 
           li{
             padding: 5px; 
-            background: #000;
+            background: #1f75fe;
+            border: none;
+            border radius: 40px 10px;
             margin-bottom: 5px; 
             
               span{
-                background: red;
+                background: green;
                 margin-left: 10px;
               }
 
@@ -115,7 +119,7 @@ export const NotificationConteudo = styled.div`
   @media only screen and (min-width: 1920px){
   }
 
-  background: yellow;
+  background: white;
   padding-top: 20px;
 
 
@@ -147,7 +151,7 @@ export const NotificationConteudo = styled.div`
   } 
 
   .ultimaAtualizacao{
-    background: #00008B;
+    background: #ef2c2a;
     width: 100%;
     min-height: 50px;
     text-align: center;
