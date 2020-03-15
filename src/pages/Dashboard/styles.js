@@ -29,7 +29,7 @@ img{
     justify-content: center;
     align-items: center;
     margin-bottom: 20px;
-    margin-right: 20px;
+    margin-right: 10px;
 
       .logoStatupCard{
          width: 130px;
