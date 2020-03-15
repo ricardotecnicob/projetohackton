@@ -36,7 +36,7 @@ export default function Dashboard() {
     <Container >
       <Header>
           As atulizações Feitas na Plataforma de <span>PERFIL</span>, <span>METAS</span>, <span>EQUIPE</span>, <span>POSTS</span>, <span>NEGOCIAÇÕES</span>, gerar <label>PONTOS</label> que poderam ser trocados em <label>PRÊMIOS</label> <br/>
-          PERFIL ATUALIZADO A CADA 30 DIAS GANHA PONTUAÇÃO <label>NOTA 1000</label> <br/><br/>
+          PERFIL ATUALIZADO A CADA 30 DIAS GANHA <label>1000 PONTOS</label> <br/><br/>
           <Link to="/dashboard" className="btnVoltar">VOLTAR</Link>
       </Header>
       <ContainerRede>
@@ -52,13 +52,12 @@ export default function Dashboard() {
             </div>
             <div className="areaMenuPerfil">
               <ul>
-                <Link to="/perfil" ><li>Meus Dados <span>80% Concluido</span></li></Link>
-                <Link to="/minhasnegociacoes" ><li>Minha Negocições  <span>30</span></li></Link>
-                <Link to="/posts" ><li>Meus Posts  <span>30</span></li></Link>
+                <Link to="/perfil" ><li>Dados da Startup <span>80% Preenchidos</span></li></Link>
+                <Link to="/minhasnegociacoes" ><li>Negociações  <span>30</span></li></Link>
+                <Link to="/posts" ><li>Posts  <span>30</span></li></Link>
                 <Link to="/metas" ><li>Metas  <span>30</span></li></Link>
                 <Link to="/team" ><li>Equipes  <span>30</span></li></Link>
                 <Link to="/negociacao" ><li>Negociações  <span>30</span></li></Link>
-                <Link to="/" ><li>Sair </li></Link>
               </ul>
             </div>
             <div className="areadecrescimento">
@@ -73,91 +72,6 @@ export default function Dashboard() {
         <ConteudoBody>
             {/* //conteudo */}
         </ConteudoBody>
-        <NotificationConteudo>
-            <div className="areaDePontos">
-                  <strong><FaTrophy /></strong>
-                  <label htmlFor="">1250</label> 
-                  <small>pts</small>
-            </div>
-            <div className="verpremios">
-                <Link to="/premios" >VER LISTA DE PRÊMIOS</Link>
-            </div>
-            <div className="ultimaAtualizacao">
-                <label> Última Atualização <br /> foi há 20 dias atrás</label>
-            </div>
-            <div className="areadenegiociacoes">
-                <div className="areaNotNegocioPassado">
-                    
-                    <div>
-                        <label>1000pts</label>
-                    </div>
-                    <div>
-                        <label>Ver Negociações <br /> em Destaques</label>
-                    </div>
-
-                </div>
-                <div className="areaNotNegocioPassado">
-                     
-                    <div>
-                        <label>1000pts</label>
-                    </div>
-                    <div>
-                        <label>Ver Negociações <br /> em Destaques</label>
-                    </div>
-
-                </div>
-                <div className="areaNotNegocioPassado">
-                     
-                    <div>
-                        <label>1000pts</label>
-                    </div>
-                    <div>
-                        <label>Ver Negociações <br /> em Destaques</label>
-                    </div>
-
-                </div>
-                <div className="areaNotNegocioPassado">
-                     
-                     <div>
-                         <label>1000pts</label>
-                     </div>
-                     <div>
-                         <label>Ver Negociações <br /> em Destaques</label>
-                     </div>
-                     
-                 </div>
-                 <div className="areaNotNegocioPassado">
-                     
-                     <div>
-                         <label>1000pts</label>
-                     </div>
-                     <div>
-                         <label>Ver Negociações <br /> em Destaques</label>
-                     </div>
-                     
-                 </div>
-                 <div className="areaNotNegocioPassado">
-                     
-                     <div>
-                         <label>1000pts</label>
-                     </div>
-                     <div>
-                         <label>Ver Negociações <br /> em Destaques</label>
-                     </div>
-                     
-                 </div>
-                 <div className="areaNotNegocioPassado">
-                     
-                     <div>
-                         <label>1000pts</label>
-                     </div>
-                     <div>
-                         <label>Ver Negociações <br /> em Destaques</label>
-                     </div>
-                     
-                 </div>
-            </div>
-        </NotificationConteudo>
       </ContainerRede>
       <Footer>
 
