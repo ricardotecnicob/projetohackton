@@ -46,7 +46,7 @@ export default function Dashboard() {
                     
                 </div>
                 <div className="textPerfil" >
-                    <strong>Nome da Statup</strong>
+                    <strong>Nome da Startup</strong>
                 </div>
                 <p>BIO: <br /> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum officia placeat voluptates, quos quis nostrum incidunt odio eius perspiciatis temporibus reprehenderit excepturi autem, dicta nobis iusto harum quas iure dignissimos.</p>
             </div>
