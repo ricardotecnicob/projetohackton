@@ -28,9 +28,8 @@ export const ConteudoBody = styled.div`
       .logoStatupCard{
          width: 130px;
          height: 130px;
-         background: #000;
+         border: 1px black;
          border-radius: 100%;
-         display: flex;
          justify-content: center;
          align-items: center;
          color: white;
