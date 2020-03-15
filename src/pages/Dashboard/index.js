@@ -32,22 +32,19 @@ export default function Dashboard() {
   chart.scroller().area(msftDataTable.mapAs({'value': 4}));
   chart.selectRange('2005-01-03', '2005-11-20');
 
-
-  const handleCrescimento = () => {
-    window.location.href = '/vercrescimento';
-  }
-
   return (
     <Container >
       <Header>
-          As atulizações Feitas na Plataforma de <span>PERFIL</span>, <span>METAS</span>, <span>EQUIPE</span>, <span>POSTS</span>, <span>NEGOCIAÇÕES</span>, gerar <label>PONTOS</label> que poderão ser trocados em <label>PRÊMIOS</label> <br/>
-          PERFIL ATUALIZADO A CADA 30 DIAS GANHA PONTUAÇÃO <label>NOTA 1000</label>;
+          As atulizações Feitas na Plataforma de <span>PERFIL</span>, <span>METAS</span>, <span>EQUIPE</span>, <span>POSTS</span>, <span>NEGOCIAÇÕES</span>, gerar <label>PONTOS</label> que poderam ser trocados em <label>PRÊMIOS</label> <br/>
+          PERFIL ATUALIZADO A CADA 30 DIAS GANHA PONTUAÇÃO <label>NOTA 1000</label>
+          <br/><br/>
+          <Link to="/dashboard" className="btnVoltar">VOLTAR</Link>
       </Header>
       <ContainerRede>
         <AreaProvider>
             <div className="areaImagemName">
                 <div className="imgPerfil" >
-                    
+                    <a href="https://placeholder.com"><img src="https://via.placeholder.com/150" /></a>
                 </div>
                 <div className="textPerfil" >
                     <strong>Nome da Startup</strong>
@@ -75,221 +72,169 @@ export default function Dashboard() {
             </div>
         </AreaProvider>
         <ConteudoBody>
-            <div className="cardStatups cardShadow" >
-                <div className="logoStatupCard">
-                  <a href="https://placeholder.com"><img src="https://via.placeholder.com/150" /></a>
-            </div>
-            <br />
+            <form >
+                  <div className="groupCampsLadoaLado linha">
+                      <div className="areaConteudoForm">
+                         <div className="fotoConteudoPerfil">
 
-                <div className="nomeStatupCard" >Nome Startup</div>
-                <div className="bioStatupCard" >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum officia placeat voluptates, quos quis nostrum incidunt odio eius perspiciatis temporibus reprehenderit excepturi autem, dicta nobis iusto harum quas iure dignissimos.</div>
-           
-                
-                <div className="areaPontos"><span className="valorPontos" >600</span> pts </div> 
-              
-                <div className="areaButtons" >
-                  <button type="button" onClick={() => handleCrescimento()} >VER CRESCIMENTO</button>
-                  <button type="button" >QUERO FAZER NEGÓCIO</button> 
-                </div>
-            </div> 
-            <div className="cardStatups" >
-                <div className="logoStatupCard"><a href="https://placeholder.com"><img src="https://via.placeholder.com/150" /></a></div><br />
+                         </div>
+                      </div>
+                      <div className="areaConteudoForm">
+                          <label>Profile Imagem</label><br/>
+                          <input type="file" name="profile_image" />
+                      </div>
+                  </div>
 
-                <div className="nomeStatupCard" >Nome Startup</div>
-                <div className="bioStatupCard" >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum officia placeat voluptates, quos quis nostrum incidunt odio eius perspiciatis temporibus reprehenderit excepturi autem, dicta nobis iusto harum quas iure dignissimos.</div>
-           
-                
-                <div className="areaPontos"><span className="valorPontos" >600</span> pts </div> 
-              
-                <div className="areaButtons" >
-                  <button type="button" onClick={() => handleCrescimento()} >VER CRESCIMENTO</button>
-                  <button type="button" >QUERO FAZER NEGÓCIO</button> 
-                </div>
-            </div> 
-            <div className="cardStatups" >
-                <div className="logoStatupCard"><a href="https://placeholder.com"><img src="https://via.placeholder.com/150" /></a></div><br />
+                  <div className="groupCampsLadoaLado linha">
+                      <div className="areaConteudoForm">
+                          <label>ID</label><br/>
+                          <input type="text" name="founded_at" value="000c3b32-afa7-4950-a7e7-80969f29a869" />
+                      </div>
+                      <div className="areaConteudoForm">
+                          <label>Data da Fundação</label><br/>
+                          <input type="text" name="founded_at" value="18/11/2014" />
+                      </div>
+                      <div className="areaConteudoForm">
+                          <label>Name</label><br/>
+                          <input type="text" name="name" value="Pocketstore" />
+                      </div>
+                      <div className="areaConteudoForm">
+                          <label>Company Name</label><br/>
+                          <input type="text" name="company_name" value="Milch" />
+                      </div>
 
-                <div className="nomeStatupCard" >Nome Startup</div>
-                <div className="bioStatupCard" >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum officia placeat voluptates, quos quis nostrum incidunt odio eius perspiciatis temporibus reprehenderit excepturi autem, dicta nobis iusto harum quas iure dignissimos.</div>
-           
-                
-                <div className="areaPontos"><span className="valorPontos" >600</span> pts </div> 
-              
-                <div className="areaButtons" >
-                  <button type="button" onClick={() => handleCrescimento()} >VER CRESCIMENTO</button>
-                  <button type="button" >QUERO FAZER NEGÓCIO</button> 
-                </div>
-            </div> 
-            <div className="cardStatups" >
-                <div className="logoStatupCard"><a href="https://placeholder.com"><img src="https://via.placeholder.com/150" /></a></div><br />
+                  </div>
+                  
+                  <div className="groupCampsLadoaLado linha">
 
-                <div className="nomeStatupCard" >Nome Startup</div>
-                <div className="bioStatupCard" >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum officia placeat voluptates, quos quis nostrum incidunt odio eius perspiciatis temporibus reprehenderit excepturi autem, dicta nobis iusto harum quas iure dignissimos.</div>
-           
-                
-                <div className="areaPontos"><span className="valorPontos" >600</span> pts </div> 
-              
-                <div className="areaButtons" >
-                  <button type="button" onClick={() => handleCrescimento()} >VER CRESCIMENTO</button>
-                  <button type="button" >QUERO FAZER NEGÓCIO</button> 
-                </div>
-            </div> 
-            <div className="cardStatups" >
-                <div className="logoStatupCard"><a href="https://placeholder.com"><img src="https://via.placeholder.com/150" /></a></div><br />
+                      <div className="areaConteudoForm areaConteudoFormText">
+                          <label>Pequena descrição</label><br/>
+                          <textarea name="short_description" >Loja virtual totalmente completa.\r\n\r\nControle de Vendas\r\nProdutos\r\nModalidades de Frete\r\nModalidades de Pagamento\r\nMuitas Outras Funções</textarea>
+                      </div>
 
-                <div className="nomeStatupCard" >Nome Startup</div>
-                <div className="bioStatupCard" >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum officia placeat voluptates, quos quis nostrum incidunt odio eius perspiciatis temporibus reprehenderit excepturi autem, dicta nobis iusto harum quas iure dignissimos.</div>
-           
-                
-                <div className="areaPontos"><span className="valorPontos" >600</span> pts </div> 
-              
-                <div className="areaButtons" >
-                  <button type="button" onClick={() => handleCrescimento()} >VER CRESCIMENTO</button>
-                  <button type="button" >QUERO FAZER NEGÓCIO</button> 
-                </div>
-            </div> 
-            <div className="cardStatups" >
-                <div className="logoStatupCard"><a href="https://placeholder.com"><img src="https://via.placeholder.com/150" /></a></div><br />
+                      <div className="areaConteudoForm areaConteudoFormText">
+                          <label>Descrição</label><br/>
+                          <textarea name="short_description" >A Pocketstore</textarea>
+                      </div>
 
-                <div className="nomeStatupCard" >Nome Startup</div>
-                <div className="bioStatupCard" >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum officia placeat voluptates, quos quis nostrum incidunt odio eius perspiciatis temporibus reprehenderit excepturi autem, dicta nobis iusto harum quas iure dignissimos.</div>
-           
-                
-                <div className="areaPontos"><span className="valorPontos" >600</span> pts </div> 
-              
-                <div className="areaButtons" >
-                  <button type="button" onClick={() => handleCrescimento()} >VER CRESCIMENTO</button>
-                  <button type="button" >QUERO FAZER NEGÓCIO</button> 
-                </div>
-            </div> 
-            <div className="cardStatups" >
-                <div className="logoStatupCard"><a href="https://placeholder.com"><img src="https://via.placeholder.com/150" /></a></div><br />
+                  </div>
 
-                <div className="nomeStatupCard" >Nome Startup</div>
-                <div className="bioStatupCard" >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum officia placeat voluptates, quos quis nostrum incidunt odio eius perspiciatis temporibus reprehenderit excepturi autem, dicta nobis iusto harum quas iure dignissimos.</div>
-           
-                
-                <div className="areaPontos"><span className="valorPontos" >600</span> pts </div> 
-              
-                <div className="areaButtons" >
-                  <button type="button" onClick={() => handleCrescimento()} >VER CRESCIMENTO</button>
-                  <button type="button" >QUERO FAZER NEGÓCIO</button> 
-                </div>
-            </div> 
-            <div className="cardStatups" >
-                <div className="logoStatupCard"><a href="https://placeholder.com"><img src="https://via.placeholder.com/150" /></a></div><br />
+                  <div className="groupCampsLadoaLado linha">
 
-                <div className="nomeStatupCard" >Nome Startup</div>
-                <div className="bioStatupCard" >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum officia placeat voluptates, quos quis nostrum incidunt odio eius perspiciatis temporibus reprehenderit excepturi autem, dicta nobis iusto harum quas iure dignissimos.</div>
-           
-                
-                <div className="areaPontos"><span className="valorPontos" >600</span> pts </div> 
-              
-                <div className="areaButtons" >
-                  <button type="button" onClick={() => handleCrescimento()} >VER CRESCIMENTO</button>
-                  <button type="button" >QUERO FAZER NEGÓCIO</button> 
-                </div>
-            </div> 
-            <div className="cardStatups" >
-                <div className="logoStatupCard"><a href="https://placeholder.com"><img src="https://via.placeholder.com/150" /></a></div><br />
+                      <div className="areaConteudoForm">
+                          <label>Tags</label><br/>
+                          <div className="groupCampsLadoaLado">
+                              <div>
+                                  <input type="text" value="agro" />
+                              </div>
+                              <div>
+                                  <input type="text" value="portal" />
+                              </div>
+                              <div>
+                                  <input type="text" value="marketplace" />
+                              </div>
+                              <div>
+                                  <input type="text" value="plataforma" />
+                              </div>
+                              <div>
+                                  <input type="text" value="conteúdo" />
+                              </div>
+                              <div>
+                                  <input type="text" value="comercialização" />
+                              </div>
+                              <div>
+                                  <input type="text" value="dados" />
+                              </div>
+                              <div>
+                                  <input type="text" value="agricultura" />
+                              </div>
+                              <div>
+                                  <input type="text" value="agtech" />
+                              </div>
+                          </div>
+                      </div>
 
-                <div className="nomeStatupCard" >Nome Startup</div>
-                <div className="bioStatupCard" >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum officia placeat voluptates, quos quis nostrum incidunt odio eius perspiciatis temporibus reprehenderit excepturi autem, dicta nobis iusto harum quas iure dignissimos.</div>
-           
-                
-                <div className="areaPontos"><span className="valorPontos" >600</span> pts </div> 
-              
-                <div className="areaButtons" >
-                  <button type="button" onClick={() => handleCrescimento()} >VER CRESCIMENTO</button>
-                  <button type="button" >QUERO FAZER NEGÓCIO</button> 
-                </div>
-            </div> 
+
+                  </div>
+                  
+                  <div className="groupCampsLadoaLado linha">
+
+                      <div className="areaConteudoForm">
+                          <label>Slug</label><br/>
+                          <input type="text" name="slug" value="A pocketstore" />
+                      </div>
+                      <div className="areaConteudoForm">
+                          <label>Fechada em:</label><br/>
+                          <input type="text" name="closed_at" value="2015-08-17T00:00:00.000Z" />
+                      </div>
+                      <div className="areaConteudoForm">
+                          <label>É Verificada:</label><br/>
+                          <input type="text" name="is_verified" value="0" />
+                      </div>
+                      <div className="areaConteudoForm">
+                          <label>Criado Em:</label><br/>
+                          <input type="text" name="created_at" value="18/06/2013" />
+                      </div>
+                      <div className="areaConteudoForm">
+                          <label>Atualizado Em:</label><br/>
+                          <input type="text" name="updated_at" value="05/11/2019" />
+                      </div>
+                      <div className="areaConteudoForm">
+                          <label>Empregados:</label><br/>
+                          <input type="text" name="employees" value="1-5" />
+                      </div>
+                      <div className="areaConteudoForm">
+                          <label>Alvo do Negócio:</label><br/>
+                          <input type="text" name="business_target" value="B2B2C" />
+                      </div>
+                      <div className="areaConteudoForm">
+                          <label>Fase de Negócio:</label><br/>
+                          <input type="text" name="business_phase" value="Fora de Operação" />
+                      </div>
+                      <div className="areaConteudoForm">
+                          <label>Modelo de Negócio:</label><br/>
+                          <input type="text" name="business_model" value="Marketplace" />
+                      </div>
+                      <div className="areaConteudoForm">
+                          <label>UF:</label><br/>
+                          <input type="text" name="uf" value="PE" />
+                      </div>
+                      <div className="areaConteudoForm">
+                          <label>Estado:</label><br/>
+                          <input type="text" name="state" value="PERNAMBUCO" />
+                      </div>
+                      <div className="areaConteudoForm">
+                          <label>Cidade:</label><br/>
+                          <input type="text" name="city" value="Recife" />
+                      </div>
+                      <div className="areaConteudoForm">
+                          <label>Estado - UF:</label><br/>
+                          <input type="text" name="place" value="Recife - PE" />
+                      </div>
+                      <div className="areaConteudoForm">
+                          <label>Status Startp:</label><br/>
+                          <input type="text" name="is_active" value="0" />
+                      </div>
+                      <div className="areaConteudoForm">
+                          <label>Distintivos Name:</label><br/>
+                          <input type="text" name="badges_name" value="Troposlab" />
+                      </div>
+                      <div className="areaConteudoForm">
+                          <label>Distintivos Profile:</label><br/>
+                          <input type="text" name="badges_profile_image" value="Troposlab" />
+                      </div>
+                      <div className="areaConteudoForm">
+                          <label>Seguimentos Primario:</label><br/>
+                          <input type="text" name="segments_primary" value="TIC e Telecom" />
+                      </div>
+                      <div className="areaConteudoForm">
+                          <label>Seguimentos Secundario:</label><br/>
+                          <input type="text" name="segments_secondary" value="Serviços Profissionais" />
+                      </div>
+                  </div>
+            </form>
         </ConteudoBody>
-        <NotificationConteudo>
-            <div className="areaDePontos">
-                  <strong><FaTrophy /></strong>
-                  <label htmlFor="">1250</label> 
-                  <small>pts</small>
-            </div>
-            <div className="verpremios">
-                <Link to="/premios" >VER LISTA DE PRÊMIOS</Link>
-            </div>
-            <div className="ultimaAtualizacao">
-                <label> Última Atualização <br /> foi há 20 dias atrás</label>
-            </div>
-            <div className="areadenegiociacoes">
-                <div className="areaNotNegocioPassado">
-                    
-                    <div>
-                        <label>1000pts</label>
-                    </div>
-                    <div>
-                        <label>Ver Negociações <br /> em Destaques</label>
-                    </div>
-
-                </div>
-                <div className="areaNotNegocioPassado">
-                     
-                    <div>
-                        <label>1000pts</label>
-                    </div>
-                    <div>
-                        <label>Ver Negociações <br /> em Destaques</label>
-                    </div>
-
-                </div>
-                <div className="areaNotNegocioPassado">
-                     
-                    <div>
-                        <label>1000pts</label>
-                    </div>
-                    <div>
-                        <label>Ver Negociações <br /> em Destaques</label>
-                    </div>
-
-                </div>
-                <div className="areaNotNegocioPassado">
-                     
-                     <div>
-                         <label>1000pts</label>
-                     </div>
-                     <div>
-                         <label>Ver Negociações <br /> em Destaques</label>
-                     </div>
-                     
-                 </div>
-                 <div className="areaNotNegocioPassado">
-                     
-                     <div>
-                         <label>1000pts</label>
-                     </div>
-                     <div>
-                         <label>Ver Negociações <br /> em Destaques</label>
-                     </div>
-                     
-                 </div>
-                 <div className="areaNotNegocioPassado">
-                     
-                     <div>
-                         <label>1000pts</label>
-                     </div>
-                     <div>
-                         <label>Ver Negociações <br /> em Destaques</label>
-                     </div>
-                     
-                 </div>
-                 <div className="areaNotNegocioPassado">
-                     
-                     <div>
-                         <label>1000pts</label>
-                     </div>
-                     <div>
-                         <label>Ver Negociações <br /> em Destaques</label>
-                     </div>
-                     
-                 </div>
-            </div>
-        </NotificationConteudo>
+        
       </ContainerRede>
       <Footer>
 
