@@ -3,9 +3,9 @@ import styled from 'styled-components';
 
 export const Header = styled.div`
     padding: 30px;
-    background: #000;
+    background: #bee1ef;
     text-align: center;
-    color: white;
+    color: black;
     font-size: 20px;
 
       span{
@@ -45,7 +45,7 @@ export const AreaProvider = styled.div`
   }
 
   
-  background: #b7c6fa;
+  background: white;
   
   .areaMenuPerfil{
       width: 90%;
