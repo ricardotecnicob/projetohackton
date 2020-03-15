@@ -13,7 +13,10 @@ export const ConteudoBody = styled.div`
   flex-wrap: wrap;
 
 img{
-  padding: 5px 1px;
+  position: sticky;
+  top: 100%;
+  display: inherit;
+  border-radius: 100%;
 }
   .cardStatups{
     width: 320px;
@@ -31,9 +34,9 @@ img{
       .logoStatupCard{
          width: 130px;
          height: 130px;
-         background: #000;
+         background: white;
          border-radius: 100%;
-         display: flex;
+         display: inline-block;
          justify-content: center;
          align-items: center;
          color: white;
